@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PetCage.unity
     guid: e36efb806008a9747bd8bd4fe7d26f7a
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: dd627e71a1c7ecd4ba588eb47ced09ca,
+      type: 2}
