@@ -18275,9 +18275,9 @@ MonoBehaviour:
   numPrey: 0
   closeToCamera: {fileID: 688564932}
   amtWater: 100
-  DieText: {fileID: 0}
+  DieText: {fileID: 2039731531}
   RestartButton: {fileID: 1974751016}
-  overlay: {fileID: 0}
+  overlay: {fileID: 661025410}
   RandomLocs:
   - {fileID: 1392032067}
   - {fileID: 1588513470}
