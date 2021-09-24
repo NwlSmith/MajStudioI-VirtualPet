@@ -23,6 +23,13 @@ public class IntroManager : MonoBehaviour
             StartCoroutine(FadeOutEnum());
         }
     }
+    
+    public void StartFadeOutEnum()
+    {
+        pressedSpace = true;
+        StartCoroutine(FadeOutEnum());
+    }
+    
 
     private IEnumerator FadeInEnum()
     {
