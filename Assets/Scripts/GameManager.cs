@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Transform closeToCamera = null;
     public int amtWater = 100;
     public Text DieText;
+    public GameObject RestartButton;
     public Image overlay;
     [SerializeField] private Transform[] RandomLocs = null;
     [SerializeField] private GameObject prey = null;
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DieText.enabled = false;
+        RestartButton.SetActive(false);
 
         StartCoroutine(FadeInEnum());
     }
@@ -99,20 +101,17 @@ public class GameManager : MonoBehaviour
     {
         DieText.enabled = true;
         DieText.GetComponent<AudioSource>().Play();
-        StartCoroutine(DieEnum());
+        RestartButton.SetActive(true);
+
     }
 
-    public IEnumerator DieEnum()
+    public void StartRestartEnum()
     {
         bool notpressed = true;
-        while (notpressed)
+        if (notpressed)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                notpressed = false;
-                StartCoroutine(FadeOutEnum());
-            }
-            yield return null;
+            notpressed = false;
+            StartCoroutine(FadeOutEnum());
         }
     }
 
