@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Comma) && curTimeMultiplier > 1)
         {
             curTimeMultiplier -= 2;
@@ -94,7 +95,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) )
         {
             PetManager.instance.GoToCamera();
-        }
+        }*/
     }
 
     public void Die()

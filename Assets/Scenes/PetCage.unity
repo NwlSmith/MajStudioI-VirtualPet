@@ -3393,7 +3393,7 @@ Transform:
   m_GameObject: {fileID: 254144504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 1971914305}
   - {fileID: 1109218314}
@@ -15943,7 +15943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1393189026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19041,6 +19041,7 @@ GameObject:
   - component: {fileID: 1642002242}
   - component: {fileID: 1642002241}
   - component: {fileID: 1642002240}
+  - component: {fileID: 1642002245}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -19180,6 +19181,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1642002245
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642002238}
+  m_Enabled: 1
 --- !u!1 &1654899069
 GameObject:
   m_ObjectHideFlags: 0
