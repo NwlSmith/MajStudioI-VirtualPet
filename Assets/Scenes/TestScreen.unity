@@ -107,15 +107,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 5
-    agentHeight: 10
+    agentRadius: 0.05
+    agentHeight: 0.1
     agentSlope: 45
     agentClimb: 2.51
-    ledgeDropHeight: 10
-    maxJumpAcrossDistance: 5
+    ledgeDropHeight: 0.1
+    maxJumpAcrossDistance: 0.05
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 1.6666666
+    cellSize: 0.016666668
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -123,7 +123,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: cdc77fb4d26537e419553d5e5241f896, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ec5b1083f3a73284188fb89476bace80, type: 2}
 --- !u!1 &6507769
 GameObject:
   m_ObjectHideFlags: 0
