@@ -13,11 +13,25 @@ public class BodyAnimationController : MonoBehaviour
     [SerializeField] private Transform mandible1Holder = null;
     [SerializeField] private Transform mandible2Holder = null;
     [SerializeField] private Transform strawHolder = null;
+    
+    public float footHeight = 10f;
+    public float maxTargetDistance = 4f;
+    public float targetMoveSpeed = 30f;
+
+    public LegManager[] legManagers;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(BlinkEnum());
+        legManagers = GetComponentsInChildren<LegManager>();
+        for (int i = 0; i < legManagers.Length; i++)
+        {
+            legManagers[i].footHeight = footHeight;
+            legManagers[i].maxTargetDistance = maxTargetDistance;
+            legManagers[i].targetMoveSpeed = targetMoveSpeed;
+            legManagers[i].oppositeLeg = i % 2 == 0 ? legManagers[i + 1] : legManagers[i - 1];
+        }
     }
 
     private IEnumerator BlinkEnum()
