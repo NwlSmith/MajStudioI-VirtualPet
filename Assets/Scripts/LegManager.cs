@@ -71,19 +71,19 @@ public class LegManager : MonoBehaviour
         if (movingTargetOrigin != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(movingTargetOrigin.position, .025f);
+            Gizmos.DrawSphere(movingTargetOrigin.position, .5f);
         }
 
         if (debugSphere != null)
         {
             Gizmos.color = Color.yellow;
-            Gizmos.DrawSphere(debugSphere.position, .025f);
+            Gizmos.DrawSphere(debugSphere.position, .5f);
         }
 
         if (trueStatTarget != null)
         {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawSphere(trueStatTarget, .025f);
+            Gizmos.DrawSphere(trueStatTarget, .5f);
         }
 
         if (trueStatTarget != null && stationaryTarget != null)
