@@ -25695,6 +25695,10 @@ MonoBehaviour:
   mandible1Holder: {fileID: 245541475}
   mandible2Holder: {fileID: 525829585}
   strawHolder: {fileID: 367093069}
+  footHeight: 10
+  maxTargetDistance: 4
+  targetMoveSpeed: 30
+  legManagers: []
 --- !u!195 &8128073149924555966
 NavMeshAgent:
   m_ObjectHideFlags: 0

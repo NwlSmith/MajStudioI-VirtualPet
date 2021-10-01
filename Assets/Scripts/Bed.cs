@@ -16,7 +16,7 @@ public class Bed : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(transform.position, PetManager.instance.transform.position) > 12f)
+        if (Vector3.Distance(transform.position, PetManager.instance.transform.position) > 12f * GlobalScale.GetScale())
             GameManager.instance.GetComponent<AudioSource>().Stop();
     }
 }

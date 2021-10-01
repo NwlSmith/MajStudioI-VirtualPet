@@ -104,7 +104,7 @@ public class PetManager : MonoBehaviour
         Vector3 targetPos = GameManager.instance.RandomLoc();
         for (int i = 0; i < 20; i++)
         {
-            if (Vector3.Distance(transform.position, targetPos) <= 10)
+            if (Vector3.Distance(transform.position, targetPos) <= 10 * GlobalScale.GetScale())
             {
                 break;
             }
@@ -130,7 +130,7 @@ public class PetManager : MonoBehaviour
         bool found = false;
         for (int i = 0; i < 20; i++) // FIGURE THIS OUT
         {
-            if (Vector3.Distance(transform.position, preyTrans.position) <= 8)
+            if (Vector3.Distance(transform.position, preyTrans.position) <= 8 * GlobalScale.GetScale())
             {
                 found = true;
                 break;
@@ -233,7 +233,7 @@ public class PetManager : MonoBehaviour
     {
         for (int i = 0; i < 20f; i++)
         {
-            if (Vector3.Distance(transform.position, dest) <= 8)
+            if (Vector3.Distance(transform.position, dest) <= 8 * GlobalScale.GetScale())
             {
                 break;
             }

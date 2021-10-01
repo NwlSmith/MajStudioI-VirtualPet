@@ -23,9 +23,9 @@ public class MovementManager : MonoBehaviour
         legManagers = GetComponentsInChildren<LegManager>();
         for (int i = 0; i < legManagers.Length; i++)
         {
-            legManagers[i].footHeight = footHeight;
-            legManagers[i].maxTargetDistance = maxTargetDistance;
-            legManagers[i].targetMoveSpeed = targetMoveSpeed;
+            legManagers[i].footHeight = footHeight * GlobalScale.GetScale();
+            legManagers[i].maxTargetDistance = maxTargetDistance * GlobalScale.GetScale();
+            legManagers[i].targetMoveSpeed = targetMoveSpeed * GlobalScale.GetScale();
             legManagers[i].oppositeLeg = i % 2 == 0 ? legManagers[i + 1] : legManagers[i - 1];
         }
     }

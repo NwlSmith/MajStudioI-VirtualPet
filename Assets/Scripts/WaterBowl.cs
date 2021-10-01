@@ -14,7 +14,7 @@ public class WaterBowl : MonoBehaviour
     {
         aS = GetComponent<AudioSource>();
         waterInitPos = water.transform.position;
-        waterEmptyPos = waterInitPos - Vector3.up * 5f * .01f;
+        waterEmptyPos = waterInitPos - Vector3.up * 5f * .01f * GlobalScale.GetScale();
     }
 
     private void OnTriggerEnter(Collider other)
