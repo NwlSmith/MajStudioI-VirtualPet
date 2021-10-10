@@ -15,6 +15,8 @@ public class LegManager : MonoBehaviour
     private Vector3 trueStatTarget;
     private IKBasic iKManager;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
         iKManager = GetComponentInChildren<IKBasic>();
@@ -28,6 +30,9 @@ public class LegManager : MonoBehaviour
 
         if (debugSphere == null)
             debugSphere = new GameObject().transform;
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = Random.Range(.9f, 1.1f);
     }
 
     // Update is called once per frame
@@ -47,6 +52,7 @@ public class LegManager : MonoBehaviour
             if (Vector3.Distance(trueStatTarget, hit.point) >= maxTargetDistance)
             {
                 trueStatTarget = hit.point + (hit.point - stationaryTarget.position).normalized * maxTargetDistance * Random.Range(0f, .5f);
+                audioSource.Play();
             }
         }
 
